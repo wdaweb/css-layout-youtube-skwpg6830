@@ -1,0 +1,158 @@
+html,
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-family: "Noto Sans TC", sans-serif;
+}
+#main{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    /* background: gray; */
+}
+
+#top{
+    width: 100%;
+    height: 60px;
+    background: white;
+    display: inline-block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+
+#top ul{
+    display: flex;
+    flex-direction: row;
+    padding: 0;/*去掉內距*/
+    margin: 0;/*去掉外距*/
+    list-style: none;/*去掉默認樣式*/
+}
+
+#top li{
+    display: flex;
+    align-items: center;/*至中對齊*/
+    margin-right: 10px;/*右邊距*/
+}
+
+#top input[type="search"] {
+    border: 1px solid #ccc; /* 輸入邊框樣式 */
+    padding: 5px; /* 輸入框內編距 */
+    width: 500px;
+}
+
+#top li:nth-child(3) {
+    left: 0;
+    right: 0;
+    margin-left: 30%;
+}
+#top li:nth-child(4)~li:nth-child(5) {
+    margin-left: 30%; 
+}
+
+#top .button{
+    display: inline-block;
+    padding: 5px 10px 0 200px;
+}
+
+#top button:nth-child(1){
+    background-color: black;
+    color: white;
+}
+#left{
+    width: 10%;
+    height:100%;
+    /* background: pink; */
+    float: left;
+    overflow: scroll;
+    margin: 60px 0 0 0;
+    position: fixed;
+    /* text-align: center; */
+}
+/* #check:hover ~ #left{
+    margin-left: -250px;
+    animation-duration: 1s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+}
+#left:checked+.check {
+        
+        margin-left: 0;
+      } */
+     
+
+#right{
+    width: 90%;
+    height: 100%;
+    margin: 60px 0 0 0;
+    background: white;
+    float: right;
+    /* overflow: auto; */
+}
+
+#right .row {
+    width: 100%;
+    position: absolute;
+}
+
+#right .col {
+    box-sizing: border-box;
+    padding:0;
+    margin: 0;
+    }
+
+#right
+#box1,
+#box2,
+#box3,
+#box4
+{
+    width: 17%;
+    height: 300px;
+    /* background: red; */
+    padding: 0 4% 0 0;
+    margin: 0 1% 0 0;
+    display: inline-block;
+}
+#right
+#box5,
+#box6,
+#box7,
+#box8
+{
+    width: 17%;
+    height: 300px;
+    /* background: red; */
+    padding: 0 4% 0 0;
+    margin: 5% 1% 0 0;
+    display: inline-block;
+}
+#right
+#box9,
+#box10,
+#box11,
+#box12
+{
+    width: 17%;
+    height: 300px;
+    /* background: red; */
+    padding: 0 4% 0 0;
+    margin: 5% 1% 0 0;
+    display: inline-block;
+}
+#right
+#box13,
+#box14,
+#box15,
+#box16
+{
+    width: 17%;
+    height: 300px;
+    background: red;
+    padding: 0 4% 0 0;
+    margin: 5% 1% 0 0;
+    display: inline-block;
+}
